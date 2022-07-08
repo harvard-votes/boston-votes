@@ -35,11 +35,11 @@ const Hero = ({
         
       <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
         <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
-            Vote in the Massachusetts primaries on <strong>September 6th</strong>.
+          <h1 className="text-5xl xl:text-6xl font-medium text-black-600 leading-normal">
+            Our future is on the <strong>ballot</strong>.
           </h1>
           <p className="text-black-500 mt-4 mb-6">
-            Our future is on the ballot.
+            Vote in the Massachusetts primaries on September 6th.
           </p>
           {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
             <Button>
@@ -58,7 +58,7 @@ const Hero = ({
               layout="responsive"
             /> */}
 
-        <div className="rounded-lg w-1/4 grid grid-flow-col grid-cols-1 py-9 divide-y-2 divide-x-0 divide-gray-100 bg-white-500 z-10">
+        <div className="rounded-lg w-full grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-gray-100 bg-white-500 z-10">
           
             <h1 className="text-3xl text-black-600 font-bold py-6 px-4">
                 Key Dates
