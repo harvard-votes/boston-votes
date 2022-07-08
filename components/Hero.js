@@ -109,7 +109,7 @@ const Hero = ({
               ))}
 
                 <button
-                  className="text-xl font-bold hover:border-orange-500 text-orange-500 hover:text-orange-600 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-4 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+                  className="text-xl font-bold hover:border-orange-500 text-orange-500 hover:text-orange-600 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-5 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
                 >
                   See full events calendar
                 </button>
