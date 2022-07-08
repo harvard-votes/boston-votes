@@ -14,7 +14,7 @@ import ButtonPrimary from ".//misc/ButtonPrimary";
 const Button = props => (
   <button
     type={props.type}
-    className="font-medium border-orange-500 text-white bg-orange-500 hover:bg-white hover:text-orange-500 transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+    className="font-bold border-orange-500 text-white bg-orange-500 hover:bg-transparent hover:text-orange-500 transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
   >
     {props.children}
   </button>
@@ -59,10 +59,10 @@ const Hero = ({
           
         <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
           <div className="inline-block align-top py-20 flex-col justify-center items-start row-start-2 sm:row-start-1">
-            <h1 className="text-5xl xl:text-6xl font-medium text-black-600 leading-normal">
+            <h1 className="text-5xl xl:text-6xl font-bold text-white leading-normal">
               Our future is on the <strong>ballot</strong>.
             </h1>
-            <p className="text-black-500 mt-4 mb-6">
+            <p className="text-slate-200 mt-4 mb-6">
               Vote in the Massachusetts primaries on September 6th.
             </p>
             {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
@@ -85,7 +85,7 @@ const Hero = ({
 
           <div className="rounded-lg w-full grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-gray-100 bg-white-500 z-10">
             
-              <h1 className="text-3xl text-black-600 font-bold py-6 px-4">
+              <h1 className="text-3xl text-white font-bold py-6 px-4">
                   Key Dates
               </h1>
               
@@ -99,17 +99,17 @@ const Hero = ({
                       <img src={listUsers.icon} className="h-6 w-6" />
                       </div>
                       <div className="flex flex-col">
-                      <p className="text-xl text-black-600 font-bold">
+                      <p className="text-xl text-orange-200 font-bold">
                           {listUsers.number}
                       </p>
-                      <p className="text-lg text-black-500">{listUsers.name}</p>
+                      <p className="text-lg text-white">{listUsers.name}</p>
                       </div>
                   </div>
                   </div>
               ))}
 
                 <button
-                  className="text-xl font-bold text-orange-500 hover:text-orange-600 bg-white transition-all duration-300  text-medium p-3 py-6 px-5 sm:px-8 "
+                  className="text-xl font-bold hover:border-orange-500 text-orange-500 hover:text-orange-600 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-4 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
                 >
                   See full events calendar
                 </button>
@@ -146,7 +146,7 @@ const Hero = ({
           ))}
         </div> */}
         <div
-          className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
+          className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0 "
           style={{ filter: "blur(114px)" }}
         ></div>
       </div>
