@@ -2,14 +2,23 @@ import React from "react";
 import Image from "next/image";
 import ButtonPrimary from ".//misc/ButtonPrimary";
 
+// const Button = props => (
+//     <button
+//       type={props.type}
+//       className="bg-red-400 hover:bg-red-500 transition-colors duration-300 text-white text-s p-3 rounded border border-red-500"
+//     >
+//       {props.children}
+//     </button>
+//   )
+
 const Button = props => (
-    <button
-      type={props.type}
-      className="bg-red-400 hover:bg-red-500 transition-colors duration-300 text-white text-s p-3 rounded border border-red-500"
-    >
-      {props.children}
-    </button>
-  )
+  <button
+    type={props.type}
+    className="font-medium border-orange-500 text-white bg-orange-500 hover:bg-white hover:text-orange-500 transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+  >
+    {props.children}
+  </button>
+)
 
 const Hero = ({
   listUser = [
@@ -31,10 +40,11 @@ const Hero = ({
   ],
 }) => {
   return (
-    <div className="max-w-screen-xl mt-10 px-8 xl:px-16 mx-auto" id="about">
+    // <div className="max-w-screen-xl mt-10 px-8 xl:px-16 mx-auto" id="about">
+    <div className="bg-scroll bg-my_bg_image h-[972px] max-w-screen-xl mt-10 px-8 xl:px-16 mx-auto" id="about">
         
       <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16 ">
-        <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
+        <div className="inline-block align-top py-12 flex-col justify-center items-start row-start-2 sm:row-start-1">
           <h1 className="text-5xl xl:text-6xl font-medium text-black-600 leading-normal">
             Our future is on the <strong>ballot</strong>.
           </h1>
@@ -42,9 +52,7 @@ const Hero = ({
             Vote in the Massachusetts primaries on September 6th.
           </p>
           {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
-            <Button>
-                Get Involved
-            </Button>
+            <Button >Meet the Candidates</Button>
 
         </div>
         <div className="flex w-full">
@@ -83,7 +91,11 @@ const Hero = ({
                 </div>
             ))}
 
-            <Button>See full events calendar</Button>
+              <button
+                className="text-xl font-bold text-orange-500 hover:text-orange-600 bg-white transition-all duration-300  text-medium p-3 py-6 px-5 sm:px-8 "
+              >
+                See full events calendar
+              </button>
 
             </div>
 
