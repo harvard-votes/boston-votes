@@ -12,14 +12,14 @@ import ButtonPrimary from ".//misc/ButtonPrimary";
 //   )
 
 const Button = props => (
-  // <button
-  //   className="font-bold border-red-700 text-white bg-red-700 hover:text-red-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
-  // >
   <button
+    className="font-bold border-red-700 text-white bg-red-700 hover:text-red-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+  >
+  {/* <button
   className="font-bold border-teal-600 text-white bg-teal-600 hover:text-teal-600 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
 >
-  {/* <button
-  className="font-bold border-sky-700 text-white bg-sky-700 hover:text-sky-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+  <button
+  className="font-bold border-sky-600 text-white bg-sky-600 hover:text-sky-600 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
   > */}
     {props.children}
   </button>
@@ -88,7 +88,7 @@ const Hero = ({
                 layout="responsive"
               /> */}
 
-          <div className="rounded rounded-r-md bg-white bg-opacity-20 rounded-l-md  w-full px-6 grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-slate-300 bg-white-500 z-10">
+          <div className="rounded rounded-r-md rounded-l-md  w-full px-6 grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-slate-300 bg-white-500 z-10">
           {/* <div className="rounded rounded-r-md rounded-l-md bg-white bg-opacity-90 w-full px-6 grid grid-flow-row grid-cols-1 py-9  bg-white-500 z-10"> */}
             
               <h1 className="text-3xl text-yellow-200 font-bold py-4 px-4">

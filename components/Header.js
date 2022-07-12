@@ -26,7 +26,7 @@ const Button = props => (
   // >
   <button
     type={props.type}
-    className="font-medium text-teal-600 bg-white-500 hover:bg-teal-600 hover:text-white transition-all duration-300  text-s p-3 rounded border border-teal-600 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
+    className="font-medium text-sky-600 bg-white-500 hover:bg-sky-600 hover:text-white transition-all duration-300  text-s p-3 rounded border border-sky-600 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
   >
     {props.children}
   </button>
