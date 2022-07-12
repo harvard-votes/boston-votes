@@ -20,9 +20,13 @@ const NavItem = props => (
 
 
 const Button = props => (
+  // <button
+  //   type={props.type}
+  //   className="font-medium text-red-700 bg-white-500 hover:bg-red-700 hover:text-white transition-all duration-300  text-s p-3 rounded border border-red-700 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
+  // >
   <button
     type={props.type}
-    className="font-medium text-orange-500 bg-white-500 hover:bg-orange-500 hover:text-white transition-all duration-300  text-s p-3 rounded border border-orange-500 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
+    className="font-medium text-teal-600 bg-white-500 hover:bg-teal-600 hover:text-white transition-all duration-300  text-s p-3 rounded border border-teal-600 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
   >
     {props.children}
   </button>
@@ -93,8 +97,8 @@ const Header = () => {
               className={
                 "duration-300 px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "resources"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-red-700 animation-active "
+                  : " text-black-500 hover:text-red-700 ")
               }
             >
               Resources
@@ -111,8 +115,8 @@ const Header = () => {
               className={
                 "duration-300 px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "candidates"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-red-700 animation-active "
+                  : " text-black-500 hover:text-red-700 ")
               }
             >
               Meet the Candidates
@@ -129,8 +133,8 @@ const Header = () => {
               className={
                 "duration-300 px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  ? " text-red-700 animation-active "
+                  : " text-black-500 hover:text-red-700 ")
               }
               >
                 About Us

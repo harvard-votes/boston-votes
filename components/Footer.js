@@ -75,16 +75,16 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-9 sm:col-end-11 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Engage</p>
           <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Why Vote {" "}
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Resources{" "}
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Meet the Candidates{" "}
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               About Us{" "}
             </li>
 
@@ -93,13 +93,13 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-11 sm:col-end-13 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Get Involved</p>
           <ul className="text-black-500">
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Register as a Voter{" "}
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Volunteer for BVC{" "}
             </li>
-            <li className="my-2 hover:text-orange-500 cursor-pointer transition-all">
+            <li className="my-2 hover:text-red-700 cursor-pointer transition-all">
               Become an Affiliate{" "}
             </li>
           </ul>

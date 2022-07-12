@@ -12,10 +12,15 @@ import ButtonPrimary from ".//misc/ButtonPrimary";
 //   )
 
 const Button = props => (
+  // <button
+  //   className="font-bold border-red-700 text-white bg-red-700 hover:text-red-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+  // >
   <button
-    type={props.type}
-    className="font-bold border-orange-500 text-white bg-orange-500 hover:bg-transparent hover:text-orange-500 transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
-  >
+  className="font-bold border-teal-600 text-white bg-teal-600 hover:text-teal-600 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+>
+  {/* <button
+  className="font-bold border-sky-700 text-white bg-sky-700 hover:text-sky-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+  > */}
     {props.children}
   </button>
 )
@@ -83,9 +88,10 @@ const Hero = ({
                 layout="responsive"
               /> */}
 
-          <div className="rounded-lg w-full grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-gray-100 bg-white-500 z-10">
+          <div className="rounded rounded-r-md bg-white bg-opacity-20 rounded-l-md  w-full px-6 grid grid-flow-row grid-cols-1 py-9 divide-y-2 divide-x-0 divide-slate-300 bg-white-500 z-10">
+          {/* <div className="rounded rounded-r-md rounded-l-md bg-white bg-opacity-90 w-full px-6 grid grid-flow-row grid-cols-1 py-9  bg-white-500 z-10"> */}
             
-              <h1 className="text-3xl text-white font-bold py-6 px-4">
+              <h1 className="text-3xl text-yellow-200 font-bold py-4 px-4">
                   Key Dates
               </h1>
               
@@ -95,11 +101,11 @@ const Hero = ({
                   key={index}
                   >
                   <div className="flex mr-auto w-auto">
-                      <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                      <div className="flex items-center justify-center bg-yellow-200  w-12 h-12 mr-6 rounded-full">
                       <img src={listUsers.icon} className="h-6 w-6" />
                       </div>
                       <div className="flex flex-col">
-                      <p className="text-xl text-orange-200 font-bold">
+                      <p className="text-xl text-white font-bold">
                           {listUsers.number}
                       </p>
                       <p className="text-lg text-white">{listUsers.name}</p>
@@ -109,8 +115,11 @@ const Hero = ({
               ))}
 
                 <button
-                  className="text-xl font-bold hover:border-orange-500 text-orange-500 hover:text-orange-600 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-5 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+                  className="text-xl font-bold text-yellow-200 hover:text-yellow-400 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-5 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
                 >
+                {/* <button
+                  className="text-xl font-bold text-teal-600 hover:text-teal-800 bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-5 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md"
+                > */}
                   See full events calendar
                 </button>
 
@@ -132,7 +141,7 @@ const Hero = ({
               key={index}
             >
               <div className="flex mx-auto w-40 sm:w-auto">
-                <div className="flex items-center justify-center bg-orange-100 w-12 h-12 mr-6 rounded-full">
+                <div className="flex items-center justify-center bg-red-100 w-12 h-12 mr-6 rounded-full">
                   <img src={listUsers.icon} className="h-6 w-6" />
                 </div>
                 <div className="flex flex-col">

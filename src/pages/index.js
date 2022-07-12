@@ -5,6 +5,8 @@ import styles from '../styles/Home.module.css';
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Header from "../../components/Header";
+import Register from "../../components/Register";
+
 
 
 
@@ -15,6 +17,8 @@ export default () => (
     <Header />
 
     <Hero />
+
+    <Register />
 
     <Footer />
   
