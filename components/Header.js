@@ -38,8 +38,10 @@ const Button = props => (
 const Header = () => {
 
   const [activeLink, setActiveLink] = useState(null);
+  const [dropdownOpen, setdropdownOpen] = useState(false);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
+
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
     });
@@ -69,7 +71,7 @@ const Header = () => {
     <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
       
       <div className="col-start-1 col-end-2 flex items-center">
-        <img src="/assets/iop.png" className="h-10 w-auto" />
+        <img src="/assets/iop.png" alt = "logo" className="h-10 w-auto" />
       </div>
 
       
@@ -82,8 +84,78 @@ const Header = () => {
         </Link> */}
 
         <div className="hidden md:block">
-        <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+        <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
 
+        <LinkScroll
+              activeClass="active"
+              to="how to vote"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("how to vote");
+              }}
+              onMouseEnter={() => {
+                setdropdownOpen(!dropdownOpen);
+              }}
+              onMouseLeave={() => {
+                setdropdownOpen(!dropdownOpen);
+              }}
+
+              className={
+                "duration-300 px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "how to vote"
+                  ? " text-red-700 animation-active "
+                  : " text-black-500 hover:text-red-700 ")
+              }
+            >
+              <div className = "flex flex-row">
+                    How to Vote
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg> 
+              </div>
+              <div
+                className={`${dropdownOpen ? `top-full opacity-100 visible` : 'top-[110%] invisible opacity-0'} absolute left-0 w-full rounded border-[.5px] border-light bg-white py-2 transition-all items-center`}>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color text-black-700 hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    Early Voting
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    Vote by Mail
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    Election Day
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    Register to Vote
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    FAQs
+                </a>
+                <a
+                    href="javascript:void(0)"
+                    className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
+                >
+                    Calendar
+                </a>
+              </div>
+
+            </LinkScroll>
 
           <LinkScroll
               activeClass="active"

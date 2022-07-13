@@ -25,6 +25,7 @@ const Pricing = () => {
     >
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
+          
 
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             
@@ -75,7 +76,64 @@ const Pricing = () => {
                 <Button>Check Registration</Button>
               </div>
             </div>
+            
           </div>
+
+          {/*START OF PARTNERS*/ }
+        <div className="bg-slate-50 container px-2 mx-auto py-12 lg:px-12">
+        <h1 className="text-5xl font-bold pb-12">
+                Boston Votes Partner Schools
+              </h1>
+        <div className="container mx-auto px-2 md:px-12">
+        <div className="flex flex-wrap -mx-1 lg:-mx-4">
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 className">
+          <div className="overflow-hidden rounded-lg h-full object-center">
+                <a href="https://jumbovote.org/" target="_blank" rel="noopener noreferrer">
+                    <img alt="tufts" className="transition ease-in-out align-middle h-full w-auto px-12 py-4 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/tufts.svg"></img>
+                </a>
+            </div>
+        </div>
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 className">
+          <div className="overflow-hidden rounded-lg h-full object-center align-middle">
+                <a href="https://voteschallenge.harvard.edu/" target="_blank" rel="noopener noreferrer">
+                    <img alt="harvard" className=" transition ease-in-out align-middle h-full w-auto px-4 py-4 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/harvard.svg"></img>
+                </a>
+            </div>
+        </div>
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 bg-slate-100bg-slate-100">
+          <div className="overflow-hidden rounded-lg h-full object-center align-middle">
+                <a href="https://mitvote.mit.edu/" target="_blank" rel="noopener noreferrer">
+                    <img alt="mit" className="transition ease-in-out align-middle h-full w-auto px-4 py-8 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/mit.png"></img>
+                </a>
+            </div>
+        </div>
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 className">
+          <div className="overflow-hidden rounded-lg h-full object-center align-middle">
+                <a href="https://www.brandeis.edu/dean-of-students/vote-deis/index.html" target="_blank" rel="noopener noreferrer">
+                    <img alt="brandeis" className="transition ease-in-out align-middle h-full w-auto px-4 py-8 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/brandeis.png"></img>
+                </a>
+            </div>
+        </div>
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 className">
+          <div className="overflow-hidden rounded-lg h-full object-center align-middle">
+                <a href="https://www.bu.edu/dos/bu-votes/" target="_blank" rel="noopener noreferrer">
+                    <img alt="bu" className="transition ease-in-out align-middle h-full w-auto px-4 py-4 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/bu.svg"></img>
+                </a>
+            </div>
+        </div>
+        <div className="my-1 px-1 w-full md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 className">
+          <div className="overflow-hidden rounded-lg h-full object-center align-middle">
+                <a href="https://www.berklee.edu/announcements/official/berkleevotes-why-your-vote-presidential-election-important" target="_blank" rel="noopener noreferrer">
+                    <img alt="berklee" className="transition ease-in-out align-middle h-full w-auto px-4 py-4 filter grayscale hover:grayscale-0 hover:bg-slate-100" src="/assets/berklee.svg"></img>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+
+          {/*END OF PARTNERS*/ }
         </div>
 
         <div className='
@@ -90,8 +148,8 @@ const Pricing = () => {
                         Meet the <strong>candidates</strong>.
                         </h1>
                         <p className="text-white drop-shadow-md text-left font-bold mt-10 mb-10">
-                        Whether you're an individual volunteer or an organization looking to 
-                            make an impact in the Greater Boston area, we'd love to have you.
+                        Whether you&apos;re an individual volunteer or an organization looking to 
+                            make an impact in the Greater Boston area, we&apos;d love to have you.
                         </p>
                         {/* <ButtonPrimary>Get Started</ButtonPrimary> */}
                         <button
@@ -103,28 +161,22 @@ const Pricing = () => {
                     </div>
                     <div className="flex w-full">
                     <div className="h-full w-full flex-shrink-0">
-                        <img class="h-full object-cover pr-4 ml-8" src="/assets/mayors.png"></img>
+                        <img className="h-full object-cover pr-4 ml-8" src="/assets/mayors.png"></img>
                     </div>
                 </div>
-
-                
             </div>
             </div>
-
-         
         </div>
 
         <div className="flex flex-col w-full my-16" id="testimoni">
-
-
           <div className="relative w-full mt-16">
             <div className="absolute rounded-xl  py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">
               <div className="flex flex-col text-left w-10/12 sm:w-7/12 lg:w-5/12 mb-6 sm:mb-0">
                 <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                   Join us and get out the vote!
                 </h5>
-                <p className="mt-3">Whether you're an individual volunteer or an organization looking to 
-                    make an impact in the Greater Boston area, we'd love to have you.</p>
+                <p className="mt-3">Whether you&apos;re an individual volunteer or an organization looking to 
+                    make an impact in the Greater Boston area, we&apos;d love to have you.</p>
               </div>
 
               <button className="font-bold border-red-700 text-white bg-red-700 hover:text-red-700 hover:bg-transparent transition-all duration-300  text-medium p-3 rounded border  py-2 px-5 sm:px-8 capitalize rounded-r-md rounded-l-md">
