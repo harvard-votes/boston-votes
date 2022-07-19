@@ -3,9 +3,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Footer from "../../components/Footer";
-import Hero from "../../components/Hero";
 import Header from "../../components/Header";
-import Pricing from "../../components/Pricing";
+import Calendar from "../../components/Calendar";
 
 
 
@@ -16,9 +15,9 @@ export default () => (
     
     <Header />
 
-    <Hero />
+    <Calendar />
 
-    <Pricing />
+
 
 
     <Footer />

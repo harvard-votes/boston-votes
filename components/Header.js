@@ -20,14 +20,14 @@ const NavItem = props => (
 
 
 const Button = props => (
-  // <button
-  //   type={props.type}
-  //   className="font-medium text-red-700 bg-white-500 hover:bg-red-700 hover:text-white transition-all duration-300  text-s p-3 rounded border border-red-700 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
-  // >
   <button
     type={props.type}
-    className="font-medium text-sky-600 bg-white-500 hover:bg-sky-600 hover:text-white transition-all duration-300  text-s p-3 rounded border border-sky-600 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
+    className="font-medium text-red-700 bg-white-500 hover:bg-red-700 hover:text-white transition-all duration-300  text-s p-3 rounded border border-red-700 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
   >
+  {/* <button
+    type={props.type}
+    className="font-medium text-sky-600 bg-white-500 hover:bg-sky-600 hover:text-white transition-all duration-300  text-s p-3 rounded border border-sky-600 py-2 px-5 sm:px-8 capitalize rounded-l-full rounded-r-full"
+  > */}
     {props.children}
   </button>
 )
@@ -86,7 +86,7 @@ const Header = () => {
         <div className="hidden md:block">
         <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500 items-center">
 
-        <LinkScroll
+        <div
               activeClass="active"
               to="how to vote"
               spy={true}
@@ -109,22 +109,23 @@ const Header = () => {
                   : " text-black-500 hover:text-red-700 ")
               }
             >
-              <div className = "flex flex-row">
+              <div className="flex flex-row">
                     How to Vote
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg> 
               </div>
               <div
-                className={`${dropdownOpen ? `top-full opacity-100 visible` : 'top-[110%] invisible opacity-0'} absolute left-0 w-full rounded border-[.5px] border-light bg-white py-2 transition-all items-center`}>
-                <a
-                    href="javascript:void(0)"
+                  className={'absolute left-0 w-full rounded border-[.5px] border-light bg-white py-2 transition-all items-center ' + (dropdownOpen ? 'top-full opacity-100 visible' : 'top-[110%] invisible opacity-0')}
+                  >                
+                  <a
+                    href="#"
                     className="block py-1 px-5 text-base font-semibold text-body-color text-black-700 hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
                 >
                     Early Voting
                 </a>
                 <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="block py-1 px-5 text-base font-semibold text-body-color hover:bg-gray-700 hover:bg-opacity-5 hover:text-primary"
                 >
                     Vote by Mail
@@ -154,10 +155,9 @@ const Header = () => {
                     Calendar
                 </a>
               </div>
+            </div>
 
-            </LinkScroll>
-
-          <LinkScroll
+          {/* <LinkScroll
               activeClass="active"
               to="resources"
               spy={true}
@@ -174,7 +174,7 @@ const Header = () => {
               }
             >
               Resources
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="candidates"
